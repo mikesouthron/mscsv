@@ -7,7 +7,7 @@ pub struct CSV {
     headers: HashMap<String, u32>,
     sep: char,
     lines: Lines<std::io::BufReader<std::fs::File>>,
-    current: Option<Vec<String>>,
+    current: Option<Vec<String>>, //FIXME: Not in use
 }
 
 impl CSV {
